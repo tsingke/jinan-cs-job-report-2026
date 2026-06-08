@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026年济南计算机类硕士研究生就业情况报告</title>
+  <meta name="description" content="基于济南市统计局2025年统计公报及主流招聘平台数据，系统分析济南IT产业就业形势、薪资水平与发展趋势。" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📊</text></svg>" />
+  <meta property="og:title" content="2026年济南计算机类硕士研究生就业情况报告" />
+  <meta property="og:description" content="基于济南市统计局2025年统计公报及主流招聘平台数据的济南IT就业市场全景分析。" />
+</head>
+<body>
+
+<!-- ===== Navigation ===== -->
+<nav class="nav" role="navigation">
+  <a href="#" class="nav-logo">
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="8" fill="url(#lg)"/><text x="14" y="19" text-anchor="middle" fill="#fff" font-size="16" font-weight="bold">J</text><defs><linearGradient id="lg" x1="0" y1="0" x2="28" y2="28"><stop stop-color="#1a3a5c"/><stop offset="1" stop-color="#e8852e"/></linearGradient></defs></svg>
+    <span>济南就业报告</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#overview">概览</a></li>
+    <li><a href="#industry">产业现状</a></li>
+    <li><a href="#salary">薪资水平</a></li>
+    <li><a href="#positions">岗位需求</a></li>
+    <li><a href="#compare">城市对比</a></li>
+    <li><a href="#ai-trend">AI浪潮</a></li>
+    <li><a href="#conclusion">总结</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="导航菜单">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-particles"></div>
+  <div class="hero-content">
+    <div class="hero-badge fade-in">
+      <span class="dot"></span>
+      2026年度 · 基于真实数据的全景分析
+    </div>
+    <h1 class="fade-up">
+      济南计算机类硕士<br/>
+      <span class="highlight">就业情况报告</span>
+    </h1>
+    <p class="fade-up">
+      基于济南市统计局2025年统计公报、猎聘·BOSS直聘·职友集等主流招聘平台数据、
+      高校就业质量报告，多维度交叉验证，呈现最真实的济南IT就业市场全景。
+    </p>
+    <div class="hero-actions fade-up">
+      <a href="#overview" class="btn btn-primary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+        开始阅读
+      </a>
+      <a href="https://github.com/tsingke/jinan-cs-job-report-2026" target="_blank" class="btn btn-secondary">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+        GitHub
+      </a>
+    </div>
+    <div class="hero-stats fade-up">
+      <div class="hero-stat">
+        <span class="number"><span class="counter" data-target="14210" data-suffix="">0</span><span class="accent">亿</span></span>
+        <span class="label">济南GDP</span>
+      </div>
+      <div class="hero-stat">
+        <span class="number"><span class="counter" data-target="1014.8" data-suffix="">0</span><span class="accent">亿</span></span>
+        <span class="label">IT服务业营收</span>
+      </div>
+      <div class="hero-stat">
+        <span class="number"><span class="counter" data-target="96" data-suffix="">0</span><span class="accent">%+</span></span>
+        <span class="label">CS硕士就业率</span>
+      </div>
+      <div class="hero-stat">
+        <span class="number"><span class="counter" data-target="18" data-suffix="">0</span><span class="accent">K+</span></span>
+        <span class="label">硕士平均起薪</span>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <div class="mouse"></div>
+    <span>向下滚动</span>
+  </div>
+</section>
+
+<!-- ===== Overview ===== -->
+<section class="section" id="overview">
+  <div class="section-header fade-up">
+    <span class="section-label">● 核心概览</span>
+    <h2 class="section-title">济南就业市场关键数据</h2>
+    <p class="section-subtitle">综合官方统计与招聘平台数据，呈现济南IT就业市场的核心面貌</p>
+  </div>
+  <div class="overview-grid">
+    <div class="data-card fade-up">
+      <div class="icon">🏙️</div>
+      <div class="number">14,210 <span class="sub">亿元</span></div>
+      <div class="card-label">2025年济南GDP，增长5.4%</div>
+      <span class="trend trend-up">▲ 稳中有进</span>
+    </div>
+    <div class="data-card fade-up">
+      <div class="icon">💻</div>
+      <div class="number">1,014.8 <span class="sub">亿元</span></div>
+      <div class="card-label">IT服务业营收，占服务业19.5%</div>
+      <span class="trend trend-up">▲ 增长4.5%</span>
+    </div>
+    <div class="data-card fade-up">
+      <div class="icon">🎓</div>
+      <div class="number">95<span class="sub">%+</span></div>
+      <div class="card-label">CS类硕士就业率，工科领先</div>
+      <span class="trend trend-up">▲ 持续高位</span>
+    </div>
+    <div class="data-card fade-up">
+      <div class="icon">💰</div>
+      <div class="number">18,000 <span class="sub">元/月</span></div>
+      <div class="card-label">硕士起薪中位数，年增16%</div>
+      <span class="trend trend-up">▲ 增速领先</span>
+    </div>
+    <div class="data-card fade-up">
+      <div class="icon">🏆</div>
+      <div class="number">全国四强</div>
+      <div class="card-label">齐鲁软件园综合排名</div>
+      <span class="trend trend-hot">🔥 实力上榜</span>
+    </div>
+    <div class="data-card fade-up">
+      <div class="icon">🤖</div>
+      <div class="number">26.23<span class="sub">%</span></div>
+      <div class="card-label">AI岗位占新经济岗位比重</div>
+      <span class="trend trend-hot">🔥 爆发增长</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Industry Status ===== -->
+<section class="section" id="industry">
+  <div class="section-header fade-up">
+    <span class="section-label">● 产业基础</span>
+    <h2 class="section-title">济南IT产业现状与人才需求</h2>
+    <p class="section-subtitle">作为中国软件名城，济南IT产业规模持续扩大，AI产业迎来爆发式增长</p>
+  </div>
+  <div class="chart-section">
+    <div class="chart-container fade-up">
+      <img src="images/fig1_it_revenue.png" alt="济南市软件和信息技术服务业营收趋势" loading="lazy" />
+      <div class="chart-caption">
+        <span class="caption-text">济南市规模以上软件和信息技术服务业营业收入从2021年的625.8亿元增长至2025年的1,014.8亿元，年均复合增长率约12.8%。</span>
+        <span class="source-tag">数据来源：济南市统计局</span>
+      </div>
+    </div>
+
+    <div class="chart-container fade-up">
+      <img src="images/fig3_industry_structure.png" alt="济南规模以上服务业营收结构" loading="lazy" />
+      <div class="chart-caption">
+        <span class="caption-text">IT服务业占比19.5%，是济南第三大服务业门类。AI产业链相关企业营收增长32.6%。</span>
+        <span class="source-tag">数据来源：济南市统计局</span>
+      </div>
+    </div>
+
+    <div class="chart-container fade-up">
+      <img src="images/fig7_talent_base.png" alt="济南科技人才与产业基础数据" loading="lazy" />
+      <div class="chart-caption">
+        <span class="caption-text">济南人才资源总量达310万人，驻济高校52所，在校生75.3万人，高新技术企业9,404家，为IT产业发展提供坚实的人才底座。</span>
+        <span class="source-tag">数据来源：济南市统计局</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Employment Rate ===== -->
+<section class="section">
+  <div class="section-header fade-up">
+    <span class="section-label">● 就业率</span>
+    <h2 class="section-title">计算机硕士就业率持续领先</h2>
+    <p class="section-subtitle">在主要工科专业中，计算机类硕士就业率长期位居前三</p>
+  </div>
+  <div class="chart-section">
+    <div class="chart-container fade-up">
+      <img src="images/fig6_employment_rate.png" alt="各专业硕士毕业生就业率对比" loading="lazy" />
+      <div class="chart-caption">
+        <span class="caption-text">人工智能专业硕士就业率最高（97.5%），软件工程（96.2%）、计算机科学与技术（95.8%）紧随其后，远超传统工科专业。</span>
+        <span class="source-tag">数据来源：高校就业质量报告综合</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Salary ===== -->
+<section class="section" id="salary">
+  <div class="section-header fade-up">
+    <span class="section-label">● 薪资水平</span>
+    <h2 class="section-title">全方位薪资数据解读</h2>
+    <p class="section-subtitle">从岗位、经验、学历三个维度深度分析济南IT人才薪资结构</p>
+  </div>
+
+  <div class="chart-section">
+    <div class="chart-container fade-up">
+      <img src="images/fig5_salary_by_position.png" alt="济南市各IT岗位薪资范围" loading="lazy" />
+      <div class="chart-caption">
+        <span class="caption-text">AI/算法工程师以最高45K月薪领跑，大数据开发、网络安全紧随其后。58.3%的岗位月薪在10K-20K区间。</span>
+        <span class="source-tag">数据来源：猎聘·BOSS直聘·职友集</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-wrapper fade-up">
+    <table class="salary-table">
+      <thead>
+        <tr>
+          <th>岗位方向</th>
+          <th>月薪范围（元）</th>
+          <th>平均月薪（元）</th>
+          <th>年薪范围（万）</th>
+          <th>需求趋势</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="highlight-row">
+          <td><strong>AI/算法工程师</strong></td>
+          <td>18,000-45,000</td>
+          <td>31,500</td>
+          <td>38-54</td>
+          <td><span class="trend trend-hot" style="margin:0">🔥 爆发</span></td>
+        </tr>
+        <tr>
+          <td>大数据开发</td>
+          <td>14,000-30,000</td>
+          <td>22,000</td>
+          <td>26-36</td>
+          <td><span class="trend trend-up" style="margin:0">▲ 增长</span></td>
+        </tr>
+        <tr>
+          <td>后端开发</td>
+          <td>10,000-25,000</td>
+          <td>17,500</td>
+          <td>21-30</td>
+          <td><span class="trend trend-up" style="margin:0">▲ 稳定</span></td>
+        </tr>
+        <tr>
+          <td>网络安全</td>
+          <td>12,000-30,000</td>
+          <td>21,000</td>
+          <td>25-36</td>
+          <td><span class="trend trend-up" style="margin:0">▲ 增长</span></td>
+        </tr>
+        <tr>
+          <td>嵌入式开发</td>
+          <td>10,000-25,000</td>
+          <td>17,500</td>
+          <td>21-30</td>
+          <td><span class="trend trend-up" style="margin:0">▲ 增长</span></td>
+        </tr>
+        <tr>
+          <td>产品经理</td>
+          <td>12,000-30,000</td>
+          <td>21,000</td>
+          <td>25-36</td>
+          <td><span class="trend trend-up" style="margin:0">▲ 稳定</span></td>
+        </tr>
+        <tr>
+          <td>前端开发</td>
+          <td>8,000-20,000</td>
+          <td>14,000</td>
+          <td>17-24</td>
+          <td><span class="trend trend-up" style="margin:0; color:#999; background:transparent;">— 持平</span></td>
+        </tr>
+        <tr>
+          <td>数据分析</td>
+          <td>9,000-20,000</td>
+          <td>14,500</td>
+          <td>17-24</td>
+          <td><span class="trend trend-up" style="margin:0">▲ 增长</span></td>
+        </tr>
+        <tr>
+          <td>软件测试</td>
+          <td>7,000-18,000</td>
+          <td>12,500</td>
+          <td>15-22</td>
+          <td><span class="trend trend-up" style="margin:0; color:#999; background:transparent;">— 持平</span></td>
+        </tr>
+        <tr>
+          <td>运维工程师</td>
+          <td>8,000-20,000</td>
+          <td>14,000</td>
+          <td>17-24</td>
+          <td><span class="trend trend-up" style="margin:0; color:#999; background:transparent;">— 持平</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="chart-section" style="margin-top:60px">
+    <div class="chart-container fade-up">
+      <img src="images/fig8_salary_experience.png" alt="薪资随工作经验增长对比" loading="lazy" />
+      <div class="chart-caption">
+        <span class="caption-text">济南程序员薪资随工作经验增长曲线陡峭：3-5年经验可达16K-25K，8-10年可达28K-40K。相比北京，济南薪资增速差距随经验增长而扩大。</span>
+        <span class="source-tag">数据来源：职友集·猎聘</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Positions Flow ===== -->
+<section class="section" id="positions">
+  <div class="section-header fade-up">
+    <span class="section-label">● 就业方向</span>
+    <h2 class="section-title">四大就业方向全景</h2>
+    <p class="section-subtitle">计算机硕士就业不止"写代码"一条路</p>
+  </div>
+  <div class="flow-section">
+    <div class="flow-grid">
+      <div class="flow-card fade-up">
+        <div class="flow-icon" style="background:rgba(26,58,92,0.08);">🔬</div>
+        <h4>技术研发方向</h4>
+        <p style="font-size:0.8rem;color:var(--accent);font-weight:600;margin-bottom:6px;">占比约55%</p>
+        <p>算法工程师、后端开发、大数据开发、嵌入式开发、网络安全</p>
+      </div>
+      <div class="flow-card fade-up">
+        <div class="flow-icon" style="background:rgba(232,133,46,0.08);">🎯</div>
+        <h4>产品与解决方案</h4>
+        <p style="font-size:0.8rem;color:var(--accent);font-weight:600;margin-bottom:6px;">占比约15%</p>
+        <p>AI产品经理（增幅369%）、解决方案架构师、技术支持</p>
+      </div>
+      <div class="flow-card fade-up">
+        <div class="flow-icon" style="background:rgba(22,163,74,0.08);">🏭</div>
+        <h4>跨行业融合</h4>
+        <p style="font-size:0.8rem;color:var(--accent);font-weight:600;margin-bottom:6px;">占比约20%</p>
+        <p>金融科技、智能汽车、医疗信息化、工业互联网</p>
+      </div>
+      <div class="flow-card fade-up">
+        <div class="flow-icon" style="background:rgba(128,90,213,0.08);">🏛️</div>
+        <h4>体制内方向</h4>
+        <p style="font-size:0.8rem;color:var(--accent);font-weight:600;margin-bottom:6px;">占比约10%</p>
+        <p>公务员（计算机岗逐年增加）、事业单位信息化、国企IT、高校科研</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-header fade-up" style="margin-top:80px">
+    <span class="section-label">● 重点产业</span>
+    <h2 class="section-title">济南新兴产业就业机会</h2>
+    <p class="section-subtitle">济南重点布局的新兴产业为计算机硕士提供广阔的就业空间</p>
+  </div>
+  <div class="stats-grid fade-up">
+    <div class="stats-card">
+      <h3>🤖 人工智能产业</h3>
+      <div class="stats-item"><span class="key">营收增长</span><span class="value">+32.6%</span></div>
+      <div class="stats-item"><span class="key">对应岗位</span><span class="value">AI算法·大模型·NLP</span></div>
+      <div class="stats-item"><span class="key">人才供需比</span><span class="value" style="color:var(--accent);">0.3（极度紧缺）</span></div>
+    </div>
+    <div class="stats-card">
+      <h3>✈️ 航空航天产业</h3>
+      <div class="stats-item"><span class="key">营收增长</span><span class="value">+12.2%</span></div>
+      <div class="stats-item"><span class="key">对应岗位</span><span class="value">嵌入式·控制系统·遥感AI</span></div>
+    </div>
+    <div class="stats-card">
+      <h3>🚗 新能源汽车/智能制造</h3>
+      <div class="stats-item"><span class="key">汽车制造业增长</span><span class="value">+19.8%</span></div>
+      <div class="stats-item"><span class="key">对应岗位</span><span class="value">智能座舱·车联网·工业软件</span></div>
+    </div>
+    <div class="stats-card">
+      <h3>🔬 前沿布局</h3>
+      <div class="stats-item"><span class="key">量子信息</span><span class="value">前瞻布局中</span></div>
+      <div class="stats-item"><span class="key">生物制造</span><span class="value">新赛道培育</span></div>
+      <div class="stats-item"><span class="key">低空经济</span><span class="value">加速发展</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== City Comparison ===== -->
+<section class="section" id="compare">
+  <div class="section-header fade-up">
+    <span class="section-label">● 城市对比</span>
+    <h2 class="section-title">济南 vs 全国主要城市</h2>
+    <p class="section-subtitle">综合考虑薪资水平与生活成本，济南的实际购买力在主要城市中表现突出</p>
+  </div>
+
+  <div class="chart-section">
+    <div class="chart-container fade-up">
+      <img src="images/fig2_salary_cities.png" alt="全国主要城市程序员薪资对比" loading="lazy" />
+      <div class="chart-caption">
+        <span class="caption-text">济南程序员平均月薪约13,200元，在二线城市中处于中上水平。硕士起薪约18K，与成都、武汉、西安等新一线城市基本持平。</span>
+        <span class="source-tag">数据来源：职友集·猎聘</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-wrapper fade-up" style="margin-top:40px">
+    <table class="salary-table">
+      <thead>
+        <tr>
+          <th>城市</th>
+          <th>程序员平均月薪</th>
+          <th>硕士起薪</th>
+          <th>平均房价（元/㎡）</th>
+          <th>薪资房价比</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>北京</td><td>22,500</td><td>35,000</td><td>65,000</td><td>0.35</td></tr>
+        <tr><td>上海</td><td>21,800</td><td>33,000</td><td>60,000</td><td>0.36</td></tr>
+        <tr><td>深圳</td><td>20,500</td><td>31,000</td><td>55,000</td><td>0.37</td></tr>
+        <tr><td>杭州</td><td>18,600</td><td>28,000</td><td>35,000</td><td>0.53</td></tr>
+        <tr><td>广州</td><td>16,200</td><td>24,000</td><td>35,000</td><td>0.46</td></tr>
+        <tr><td>南京</td><td>15,200</td><td>22,000</td><td>30,000</td><td>0.51</td></tr>
+        <tr><td>成都</td><td>14,800</td><td>21,000</td><td>18,000</td><td>0.82</td></tr>
+        <tr><td>武汉</td><td>13,500</td><td>19,000</td><td>17,000</td><td>0.79</td></tr>
+        <tr class="highlight-row"><td><strong>济南</strong></td><td><strong>13,200</strong></td><td><strong>18,000</strong></td><td><strong>15,000</strong></td><td><strong>0.88</strong></td></tr>
+        <tr><td>西安</td><td>12,800</td><td>18,000</td><td>15,000</td><td>0.85</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="stats-grid fade-up" style="margin-top:60px">
+    <div class="stats-card" style="background:var(--gradient-1);color:rgba(255,255,255,0.9);">
+      <h3 style="color:#fff;">济南就业独特优势</h3>
+      <div class="stats-item" style="border-color:rgba(255,255,255,0.1);">
+        <span class="key" style="color:rgba(255,255,255,0.8);">🏠 生活成本</span>
+        <span class="value" style="color:#fff;">仅为北京1/4</span>
+      </div>
+      <div class="stats-item" style="border-color:rgba(255,255,255,0.1);">
+        <span class="key" style="color:rgba(255,255,255,0.8);">🚇 通勤体验</span>
+        <span class="value" style="color:#fff;">地铁新增5条线路</span>
+      </div>
+      <div class="stats-item" style="border-color:rgba(255,255,255,0.1);">
+        <span class="key" style="color:rgba(255,255,255,0.8);">🏆 人才政策</span>
+        <span class="value" style="color:#fff;">"泉优计划"+住房补贴</span>
+      </div>
+      <div class="stats-item" style="border-color:rgba(255,255,255,0.1);">
+        <span class="key" style="color:rgba(255,255,255,0.8);">💼 产业基础</span>
+        <span class="value" style="color:#fff;">齐鲁软件园全国四强</span>
+      </div>
+    </div>
+    <div class="stats-card" style="background:var(--gradient-2);color:rgba(255,255,255,0.9);">
+      <h3 style="color:#fff;">薪资房价比优势</h3>
+      <p style="color:rgba(255,255,255,0.85);margin-bottom:16px;line-height:1.7;">
+        薪资房价比 = 程序员月薪 ÷ 房价均价。比值越高，相对购房能力越强。
+      </p>
+      <div style="display:flex;gap:24px;flex-wrap:wrap;">
+        <div style="text-align:center;flex:1;">
+          <div style="font-size:2.5rem;font-weight:800;color:#fff;line-height:1;">0.88</div>
+          <div style="font-size:0.85rem;color:rgba(255,255,255,0.7);">济 南</div>
+        </div>
+        <div style="text-align:center;flex:1;">
+          <div style="font-size:2.5rem;font-weight:800;color:rgba(255,255,255,0.5);line-height:1;">0.35</div>
+          <div style="font-size:0.85rem;color:rgba(255,255,255,0.7);">北 京</div>
+        </div>
+        <div style="text-align:center;flex:1;">
+          <div style="font-size:2.5rem;font-weight:800;color:rgba(255,255,255,0.5);line-height:1;">0.36</div>
+          <div style="font-size:0.85rem;color:rgba(255,255,255,0.7);">上 海</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== AI Wave ===== -->
+<section class="section" id="ai-trend">
+  <div class="section-header fade-up">
+    <span class="section-label">● AI浪潮</span>
+    <h2 class="section-title">AI重塑就业格局</h2>
+    <p class="section-subtitle">AI岗位爆发式增长，既是挑战更是机遇</p>
+  </div>
+  <div class="chart-section">
+    <div class="chart-container fade-up">
+      <img src="images/fig4_ai_job_growth.png" alt="AI岗位占比变化" loading="lazy" />
+      <div class="chart-caption">
+        <span class="caption-text">AI岗位在全部新经济岗位中的占比从2024年2.29%跃升至2026年26.23%。2026年春招AI岗位数量较去年同期增长约12倍。</span>
+        <span class="source-tag">数据来源：猎聘大数据平台</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats-grid fade-up">
+    <div class="stats-card">
+      <h3>📈 结构性变化</h3>
+      <div class="stats-item"><span class="key">AI岗位量增幅（同比）</span><span class="value" style="color:var(--accent);">+543%</span></div>
+      <div class="stats-item"><span class="key">要求AI工具的职位增长</span><span class="value" style="color:var(--accent);">+154%</span></div>
+      <div class="stats-item"><span class="key">要求AI智能体的职位增长</span><span class="value" style="color:var(--accent);">+293%</span></div>
+      <div class="stats-item"><span class="key">AI产品经理岗位增幅</span><span class="value" style="color:var(--accent);">+369%</span></div>
+      <div class="stats-item"><span class="key">AI科学家/负责人平均月薪</span><span class="value">12.7万</span></div>
+    </div>
+    <div class="stats-card">
+      <h3>⚖️ 正负效应评估</h3>
+      <div class="stats-item"><span class="key">AI工具对初级岗位替代率</span><span class="value" style="color:#dc2626;">85%</span></div>
+      <div class="stats-item"><span class="key">AI创造新岗位 vs 消灭岗位</span><span class="value" style="color:#16a34a;">创造 > 消灭</span></div>
+      <div class="stats-item"><span class="key">大模型算法人才供需比</span><span class="value" style="color:var(--accent);">0.3（极缺）</span></div>
+      <div class="stats-item"><span class="key">腾讯技术岗扩招</span><span class="value" style="color:#16a34a;">+36%</span></div>
+      <div class="stats-item"><span class="key">蚂蚁春招AI相关技术岗</span><span class="value" style="color:#16a34a;">&gt;70%</span></div>
+    </div>
+  </div>
+
+  <div class="section-header fade-up" style="margin-top:60px">
+    <span class="section-label">● 核心观点</span>
+    <h2 class="section-title">不是行业饱和，而是结构升级</h2>
+    <p class="section-subtitle">普通程序员供过于求，顶尖技术人才一将难求</p>
+  </div>
+  <div class="stats-grid fade-up">
+    <div class="stats-card" style="text-align:center;">
+      <div style="font-size:3rem;margin-bottom:12px;">📉</div>
+      <h3 style="color:var(--accent);">基础编程岗位</h3>
+      <p style="color:var(--text-light);margin-top:8px;">全国超千所高校开设CS专业，每年毕业生超百万人。AI编程工具渗透率已超过40%，仅凭"会写代码"就能找到好工作的时代已经过去。</p>
+    </div>
+    <div class="stats-card" style="text-align:center;">
+      <div style="font-size:3rem;margin-bottom:12px;">🚀</div>
+      <h3 style="color:var(--primary);">高端技术人才</h3>
+      <p style="color:var(--text-light);margin-top:8px;">AI科学家月薪突破12.7万，算法研究员月薪约7万。大模型算法人才供需比仅0.3——每3个岗位争夺1名求职者，企业抢人难度极大。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Conclusion ===== -->
+<section class="section conclusion" id="conclusion">
+  <div class="section-header fade-up">
+    <span class="section-label" style="color:var(--accent-light);">● 综合评价</span>
+    <h2 class="section-title">结论与建议</h2>
+    <p class="section-subtitle">济南是计算机类硕士性价比极高的就业选择</p>
+  </div>
+  <div class="conclusion-content fade-up">
+    <div class="conclusion-box">
+      <span class="big-number">⭐⭐⭐⭐</span>
+      <div class="verdict">综合评分 4/5 · 强力推荐</div>
+      <p>济南薪资在二线城市领先，生活成本仅一线城市约1/4，AI产业增速超32%，齐鲁软件园全国四强。对于追求高性价比生活质量的计算机硕士，济南是一个值得认真考虑的选择。</p>
+    </div>
+  </div>
+
+  <div class="stats-grid fade-up" style="margin-top:60px;position:relative;z-index:2;">
+    <div class="stats-card" style="background:rgba(255,255,255,0.08);backdrop-filter:blur(10px);border-color:rgba(255,255,255,0.12);">
+      <h3 style="color:#fff;">🎯 在读硕士行动建议</h3>
+      <div class="stats-item" style="border-color:rgba(255,255,255,0.1);">
+        <span class="key" style="color:rgba(255,255,255,0.8);">① 尽早确定细分方向</span>
+        <span class="value" style="color:var(--accent-light);">深耕1-2个方向</span>
+      </div>
+      <div class="stats-item" style="border-color:rgba(255,255,255,0.1);">
+        <span class="key" style="color:rgba(255,255,255,0.8);">② 项目经验 > 课业成绩</span>
+        <span class="value" style="color:var(--accent-light);">GitHub·竞赛·实习</span>
+      </div>
+      <div class="stats-item" style="border-color:rgba(255,255,255,0.1);">
+        <span class="key" style="color:rgba(255,255,255,0.8);">③ 主动拥抱AI工具</span>
+        <span class="value" style="color:var(--accent-light);">从加分项变硬性指标</span>
+      </div>
+      <div class="stats-item" style="border-color:rgba(255,255,255,0.1);">
+        <span class="key" style="color:rgba(255,255,255,0.8);">④ 关注济南政企项目</span>
+        <span class="value" style="color:var(--accent-light);">稳定性高竞争小</span>
+      </div>
+      <div class="stats-item" style="border-color:rgba(255,255,255,0.1);">
+        <span class="key" style="color:rgba(255,255,255,0.8);">⑤ 把握实习机会</span>
+        <span class="value" style="color:var(--accent-light);">浪潮·中孚·齐鲁软件园</span>
+      </div>
+    </div>
+    <div class="stats-card" style="background:rgba(255,255,255,0.08;backdrop-filter:blur(10px);border-color:rgba(255,255,255,0.12);">
+      <h3 style="color:#fff;">📊 评分维度</h3>
+      <div class="stats-item" style="border-color:rgba(255,255,255,0.1);">
+        <span class="key" style="color:rgba(255,255,255,0.8);">薪资水平</span>
+        <span class="value" style="color:#fff;">★★★★ 领先</span>
+      </div>
+      <div class="stats-item" style="border-color:rgba(255,255,255,0.1);">
+        <span class="key" style="color:rgba(255,255,255,0.8);">生活成本</span>
+        <span class="value" style="color:#fff;">★★★★★ 优秀</span>
+      </div>
+      <div class="stats-item" style="border-color:rgba(255,255,255,0.1);">
+        <span class="key" style="color:rgba(255,255,255,0.8);">产业机会</span>
+        <span class="value" style="color:#fff;">★★★★ 丰富</span>
+      </div>
+      <div class="stats-item" style="border-color:rgba(255,255,255,0.1);">
+        <span class="key" style="color:rgba(255,255,255,0.8);">政策支持</span>
+        <span class="value" style="color:#fff;">★★★★★ 完善</span>
+      </div>
+      <div class="stats-item" style="border-color:rgba(255,255,255,0.1);">
+        <span class="key" style="color:rgba(255,255,255,0.8);">职业天花板</span>
+        <span class="value" style="color:#fff;">★★★ 中等</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-header fade-up" style="margin-top:60px;position:relative;z-index:2;">
+    <p class="section-subtitle" style="color:rgba(255,255,255,0.5);font-size:0.9rem;">
+      数据来源：济南市统计局《2025年统计公报》· 猎聘·BOSS直聘·职友集 · 齐鲁软件园官方数据 · 高校就业质量报告<br/>
+      报告生成于 2026年6月 · 图表为基于真实数据的原创可视化
+    </p>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <p>© 2026 <a href="https://github.com/tsingke">tsingke</a> · 济南计算机类硕士就业情况报告</p>
+    </div>
+    <div>
+      <a href="https://github.com/tsingke/jinan-cs-job-report-2026" target="_blank">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
